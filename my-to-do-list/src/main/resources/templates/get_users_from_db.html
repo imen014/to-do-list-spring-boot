@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>users list</title>
+</head>
+<body>
+<p>users</p>
+ <ul>
+<li th:each="user : ${users}">show user: <span th:text="${user.username}"></span>
+<span th:text="${user.email}"></span>
+<span th:text="${user.password}"></span>
+
+
+
+
+</li>
+</ul>
+</body>
+</html>
